@@ -28,7 +28,7 @@ jobs:
     - name: Install all necessary packages
       run: pip install jupyter lxml pandas requests html5lib dotenv re os 
     - name: Scraping today's data
-      run: jupyter nbconvert --to notebook --execute "AQI Updater.ipynb" --stdout
+      run: jupyter nbconvert --to notebook --execute "hotspot_clusters_updater.ipynb" --stdout
     - name: Commit and push any changes
       run: |-
         git config user.name "Automated"
