@@ -4,7 +4,7 @@ In this repo, I download and create an automatically updating interactive map fr
 
 Data on flash flood risk, ranked from 0 to 3, for 50 hotspots in the Nile Basin is published daily by the Nile Basin Initiative on the Nile Basin Flash Flood Early Warning System: https://flashfloodalert.nilebasin.org/workspaces/6c407e1b-5d25-4d83-b782-b6c81f8648ee/applications/9a806474-3cdd-447a-8a01-9898d9974bf8.
 
-I use this data to create this map, which updates once daily: https://annikamcginnis.github.io/nile_basin_flood_hotspots_daily/
+I download, analyze and visualize the data to create this map, which updates once daily: https://annikamcginnis.github.io/nile_basin_flood_hotspots_daily/
 
 ## Step 1: Scraping Flood Risk Geodatabase
 
