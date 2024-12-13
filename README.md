@@ -22,7 +22,7 @@ I download, analyze and visualize the data to create this map, which updates onc
 ## Step 2: Auto-Updating the Data 
 
 1. I created a Github repo for this project: https://github.com/annikamcginnis/nile_basin_flood_hotspots_daily/
-2. In Github Actions, I created a .yml file (update.yml) that imports all the libraries I used in my data download and analysis, requesting the daily dataframe ("flood_risk_today.csv") to update every day at 7pm EST through the Python file "hotspot_clusters_updater.ipynb." For this, I modified the .yml file from jsoma's bad-air-cities tutorial: https://github.com/jsoma/bad-air-cities/blob/main/.github/workflows/update.yml
+2. In Github Actions, I created a .yml file (update.yml) that imports all the libraries I used in my data download and analysis, requesting the daily dataframe ("flood_risk_today.csv") to update every day at 7pm EST through the Python Jupyter notebook file "hotspot_clusters_updater.ipynb." For this, I modified the .yml file from jsoma's bad-air-cities tutorial: https://github.com/jsoma/bad-air-cities/blob/main/.github/workflows/update.yml
 
 ## Step 3: Creating Datawrapper Map 
 
