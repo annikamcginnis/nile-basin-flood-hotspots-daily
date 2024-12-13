@@ -39,3 +39,4 @@ I download, analyze and visualize the data to create this map, which updates onc
 3. I modified the CSS to extend the map across the screen and tailor the page design.
 4. I published the index.html file using Github Pages.
 
+** This repo also includes a JSON file with the boundaries of the geographic regions included in the flood geodatabase, and a Python Jupyter Notebook where I explain how I downloaded and simplified this file using Python and QGIS. **
