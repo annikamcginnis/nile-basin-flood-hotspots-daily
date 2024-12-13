@@ -26,7 +26,7 @@ jobs:
       with:
         python-version: '3.10'
     - name: Install all necessary packages
-      run: pip install jupyter lxml pandas requests html5lib python-dotenv re os 
+      run: pip install jupyter lxml pandas requests html5lib python-dotenv  
     - name: Scraping today's data
       run: jupyter nbconvert --to notebook --execute "hotspot_clusters_updater.ipynb" --stdout
     - name: Commit and push any changes
