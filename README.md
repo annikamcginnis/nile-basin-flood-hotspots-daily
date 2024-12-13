@@ -17,7 +17,7 @@ I use this data to create this map, which updates once daily: https://annikamcgi
 7. Using the Google Maps API in Python, I reverse Geocode the coordinates to find the names of each hotspot location. Then I add the locations to the dataframe. I change null values to 'Unknown.'
 8. Using datetime in Python, I change the date format in the date column to [Day of the Week], [Month] Day, Year. 
 9. I create a dataframe only for today's date by extracting the first 50 rows from the revised dataframe.
-10. I save both dataframes to CSV files.
+10. I save both dataframes to CSV files. Today's data is saved as "flood_risk_today.csv" and the two weeks data is saved as "flood_risk_last_2_weeks.csv." I also save the original data download as "all_hotspots.csv."
 
 ## Step 2: Auto-Updating the Data 
 
