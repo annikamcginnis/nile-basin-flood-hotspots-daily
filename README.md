@@ -10,6 +10,9 @@ I download, analyze and visualize the data to create this map, which updates onc
 
 1. In "hotspot_clusters_updater.ipynb," I download the layer "nile2:hybas_hotsport_cluster," which contains all the information for the hotspots, using requests. I identified this layer on the WFS Capabilities URL for the NBI geodatabase under <FeatureTypeList>: https://nilebasin-dss-data.azurewebsites.net/geoserver/nile2/wfs?SERVICE=WFS&REQUEST=GetCapabilities).
 2. From the JSON data received as the response, I extract IDs, coordinates, flood risk and dates for each hotspot and add them to a list of dictionaries in Python.
+
+## Step 2: Cleaning and Analyzing Data
+
 3. I import this list to a Pandas dataframe. I clean the data using Pandas functions and regular expressions.
 4. Grouping by coordinates, I determine that the dataframe includes data for 50 hotspots, repeated daily. I create a dataframe including data only for the last two weeks (700 rows).
 5. I add columns in Pandas for latitude, longitude, the maximum flood risk on any day in the last two weeks, and the sum of flood risk values in the last two weeks, through conducting various Pandas functions.
