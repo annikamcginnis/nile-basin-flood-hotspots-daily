@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapbox GL JS with MBTiles</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <style>
+    body, html { margin: 0; height: 100%; }
+    #map { width: 100%; height: 100%; }
+    .mapboxgl-popup { max-width: 300px; }
+    #legend {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: rgba(255, 255, 255, 0.7);  /* Set background to 70% opacity */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: #1a1a1a;
+    z-index: 1;
+    width: 250px;  /* Adjust the width for better layout */
+    font-family: Georgia, serif;  /* Set the font to Georgia */
+  }
+
+    #legend-title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;  /* Center-align the title */
+    font-family: Georgia, serif;  /* Set the font to Georgia for the title */
+    color: #1a1a1a;
+  }
+
+    .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+    .legend-color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="legend">
+    <div id="legend-title">Flash Flood Forecast</div> <!-- Title added here -->
+  </div>  <!-- Legend container -->
+  <script>
+    // Replace 'your-access-token' with your actual Mapbox token
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWNnaW5uaXNhbm5pa2EiLCJhIjoiY200YWkzYXBoMDA0ZzJrcHA5aHJvbnB4MyJ9.6uJnaHT2MyqY_87QOL6x1g';
+
+    const map = new mapboxgl.Map({
+      container: 'map', 
+      style: 'mapbox://styles/mapbox/light-v10', // Lighter basemap style
+      center: [32.543277623292475, 9.016550723797069], // Set to your region (longitude, latitude)
+      zoom: 4.5
+    });
+
+    map.on('load', () => {
+      // Add the custom tileset as a vector source
+      map.addSource('custom-tileset', {
+        type: 'vector',
+        url: 'mapbox://mcginnisannika.84mpqefc'
+      });
+
+      // Add a layer to style the regions based on a value (fill layer)
+      map.addLayer({
+        'id': 'custom-fill-layer',
+        'type': 'fill',
+        'source': 'custom-tileset',
+        'source-layer': 'simplified_admin_cat_geojson', // Replace with your specific layer name
+        'paint': {
+          // Use an expression to color based on the value property
+          'fill-color': [
+            'interpolate', // Interpolate the color based on the 'value' property
+            ['linear'],
+            ['get', 'data_value'], // Get the 'value' property for each feature
+            0, '#b3c6ff', // Color for value 0
+            1, '#3366ff', // Color for value 1
+            2, '#002db3', // Color for value 2
+            3, '#001a66'  // Color for value 3
+          ],
+          'fill-opacity': 0.7, // Set fill opacity
+        }
+      });
+
+      // Add a layer to outline the boundaries of regions (line layer)
+      map.addLayer({
+        'id': 'custom-outline-layer',
+        'type': 'line',
+        'source': 'custom-tileset',
+        'source-layer': 'simplified_admin_cat_geojson', // Same layer name as fill layer
+        'paint': {
+          'line-color': '#668cff', 
+          'line-width': 0.5, 
+          'line-opacity': 0.7
+        }
+      });
+
+      // Create a popup to show data on hover
+      const popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+      });
+
+      // When mouse moves over the map, check for features under the cursor
+      map.on('mousemove', 'custom-fill-layer', (e) => {
+        const features = map.queryRenderedFeatures(e.point, {
+          layers: ['custom-fill-layer']
+        });
+
+        if (features.length > 0) {
+          const feature = features[0]; // Get the first feature under the cursor
+          const name = feature.properties.name; // Assuming 'name' is the property holding the region name
+          const dataValue = feature.properties.data_value; // Assuming 'data_value' is the property holding the data value
+
+          // Set the content for the popup
+          popup.setLngLat(e.lngLat)
+            .setHTML(`<strong>${name}</strong><br>Flash Flood Forecast: ${dataValue}`)
+            .addTo(map);
+        } else {
+          popup.remove(); // Remove popup if no feature is found under the cursor
+        }
+      });
+
+      // Remove the popup when the mouse leaves the region layer
+      map.on('mouseleave', 'custom-fill-layer', () => {
+        popup.remove();
+      });
+
+      // Add the legend dynamically
+      const legend = document.getElementById('legend');
+      const valueRange = [0, 1, 2, 3]; // Specify the value range you want for the legend
+      const colorScale = [
+        '#b3c6ff', '#3366ff', '#002db3', '#001a66'  // Color range corresponding to values
+      ];
+      const valueLabels = ['Low', 'Medium', 'High', 'Very High']; // Labels for each value range
+
+      // Highlighted: Generate the legend items dynamically based on value range
+      valueRange.forEach((value, index) => {
+        const legendItem = document.createElement('div');
+        legendItem.className = 'legend-item';
+
+        const colorBox = document.createElement('div');
+        colorBox.className = 'legend-color-box';
+        colorBox.style.backgroundColor = colorScale[index];
+
+        const label = document.createElement('span');
+        label.textContent = `${valueLabels[index]}`;  // Add corresponding label for each value
+
+        legendItem.appendChild(colorBox);
+        legendItem.appendChild(label);
+        legend.appendChild(legendItem);
+      });
+
+    });
+  </script>
+</body>
+</html>
