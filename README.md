@@ -22,12 +22,12 @@ I download, analyze and visualize the data to create this map, which updates onc
 9. I create a dataframe only for today's date by extracting the first 50 rows from the revised dataframe.
 10. I save both dataframes to CSV files. Today's data is saved as "flood_risk_today.csv" and the two weeks data is saved as "flood_risk_last_2_weeks.csv." I also save the original data download as "all_hotspots.csv."
 
-## Step 2: Auto-Updating the Data 
+## Step 3: Auto-Updating the Data 
 
 1. I created a Github repo for this project: https://github.com/annikamcginnis/nile_basin_flood_hotspots_daily/
 2. In Github Actions, I created a .yml file (update.yml) that imports all the libraries I used in my data download and analysis, requesting the daily dataframe ("flood_risk_today.csv") to update once every day through the Python Jupyter Notebook file "hotspot_clusters_updater.ipynb." For this, I modified the .yml file from jsoma's bad-air-cities tutorial: https://github.com/jsoma/bad-air-cities/blob/main/.github/workflows/update.yml
 
-## Step 3: Creating Datawrapper Map 
+## Step 4: Creating Datawrapper Map 
 
 1. I created a Symbol map in Datawrapper.de, linking an external dataset to the flood_risk_today.csv file on my repo: https://github.com/annikamcginnis/nile_basin_flood_hotspots_daily/flood_risk_today.csv
 2. I sized points by the radius values.
@@ -35,7 +35,7 @@ I download, analyze and visualize the data to create this map, which updates onc
 4. I added a color and size legend.
 5. I modified tooltips to include information upon hover for each hotspot's location, flood risk today, and maximum flood risk in the last two weeks.
 
-## Step 4: Creating the Map Website 
+## Step 5: Creating the Map Website 
 
 1. I created an HTML website file ("index.html") by modifying the index.html file from jsoma's bad-air-cities tutorial: https://github.com/jsoma/bad-air-cities/blob/main/index.html
 2. I inserted the responsive iFrame embed code from my Datawrapper map.
