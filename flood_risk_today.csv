@@ -2,50 +2,50 @@ hotspot_name,longitude,latitude,coordinates,flood_risk,date,max_risk_last_2_week
 "Dadei, Sudan",23.1393,13.7155,"(23.1393, 13.7155)",0,"Monday, January 20, 2025",0,0,2
 "Endur, Sudan",24.9677,12.1647,"(24.9677, 12.1647)",0,"Monday, January 20, 2025",0,0,2
 "Rimenze, South Sudan",28.5271,4.7375,"(28.5271, 4.7375)",0,"Monday, January 20, 2025",0,0,2
-"Lutiba, Democratic Republic of the Congo",29.0604,-1.096,"(29.0604, -1.096)",0,"Monday, January 20, 2025",0,0,2
+"Rubare, Democratic Republic of the Congo",29.3519,-1.2063,"(29.3519, -1.2063)",0,"Monday, January 20, 2025",0,0,2
 "Agokadol, South Sudan",29.5066,6.8878,"(29.5066, 6.8878)",0,"Monday, January 20, 2025",0,0,2
-"Libokara, Democratic Republic of the Congo",29.6304,0.3538,"(29.6304, 0.3538)",0,"Monday, January 20, 2025",0,0,2
-"Migende, Burundi",29.651,-3.0336,"(29.651, -3.0336)",0,"Monday, January 20, 2025",0,0,2
-"Kivuye, Rwanda",29.9079,-1.5236,"(29.9079, -1.5236)",0,"Monday, January 20, 2025",0,0,2
+"Libokara, Democratic Republic of the Congo",29.6315,0.305,"(29.6315, 0.305)",0,"Monday, January 20, 2025",0,0,2
+"Gihororo, Burundi",29.6507,-2.9754,"(29.6507, -2.9754)",0,"Monday, January 20, 2025",0,0,2
 "Thar Wang, South Sudan",29.9563,8.5245,"(29.9563, 8.5245)",0,"Monday, January 20, 2025",0,0,2
-"Kyembugu, Uganda",30.3449,-0.655,"(30.3449, -0.655)",0,"Monday, January 20, 2025",0,0,2
-"Bekwa, Democratic Republic of the Congo",30.4266,1.762,"(30.4266, 1.762)",0,"Monday, January 20, 2025",0,0,2
-"Binya, Democratic Republic of the Congo",30.7599,2.8458,"(30.7599, 2.8458)",0,"Monday, January 20, 2025",0,0,2
-"Limbe sub county, South Sudan",30.821,4.1636,"(30.821, 4.1636)",0,"Monday, January 20, 2025",0,0,2
-"Mukashogoro, Tanzania",31.114,-2.6171,"(31.114, -2.6171)",0,"Monday, January 20, 2025",0,0,2
-"Bubba, Uganda",31.3467,-0.7393,"(31.3467, -0.7393)",0,"Monday, January 20, 2025",0,0,2
+"Bekwa, Democratic Republic of the Congo",30.3865,1.7309,"(30.3865, 1.7309)",0,"Monday, January 20, 2025",0,0,2
+"Aru, Democratic Republic of the Congo",30.7605,2.8136,"(30.7605, 2.8136)",0,"Monday, January 20, 2025",0,0,2
+"Birere, Uganda",30.7744,-0.7281,"(30.7744, -0.7281)",0,"Monday, January 20, 2025",0,0,2
+"Limbe sub county, South Sudan",30.8246,4.1548,"(30.8246, 4.1548)",0,"Monday, January 20, 2025",0,0,2
+"Mukashogoro, Tanzania",31.0824,-2.6045,"(31.0824, -2.6045)",0,"Monday, January 20, 2025",0,0,2
 "Fakoi, South Sudan",31.4409,7.043,"(31.4409, 7.043)",0,"Monday, January 20, 2025",0,0,2
 Unknown,31.9901,19.0732,"(31.9901, 19.0732)",0,"Monday, January 20, 2025",0,0,2
+"Gulu, Uganda",32.2551,2.6514,"(32.2551, 2.6514)",0,"Monday, January 20, 2025",0,0,2
 "Magwi, South Sudan",32.2666,4.1314,"(32.2666, 4.1314)",0,"Monday, January 20, 2025",0,0,2
 "Bilaiwal, South Sudan",32.407,9.2064,"(32.407, 9.2064)",0,"Monday, January 20, 2025",0,0,2
 "Wad Ramli, Sudan",32.4549,16.1717,"(32.4549, 16.1717)",0,"Monday, January 20, 2025",0,0,2
-"Alito, Uganda",32.7748,2.3993,"(32.7748, 2.3993)",0,"Monday, January 20, 2025",0,0,2
 "Gaikwach, South Sudan",32.8558,11.6376,"(32.8558, 11.6376)",0,"Monday, January 20, 2025",0,0,2
-"Nyahanga, Tanzania",32.9867,-3.2276,"(32.9867, -3.2276)",0,"Monday, January 20, 2025",0,0,2
-"Kalugu, Uganda",33.0502,0.6607,"(33.0502, 0.6607)",0,"Monday, January 20, 2025",0,0,2
+"Luanungu, Tanzania",32.8592,-3.1937,"(32.8592, -3.1937)",0,"Monday, January 20, 2025",0,0,2
+"Ngeta, Uganda",32.9728,2.3033,"(32.9728, 2.3033)",0,"Monday, January 20, 2025",0,0,2
+"Nazigo, Uganda",33.007,0.6391,"(33.007, 0.6391)",0,"Monday, January 20, 2025",0,0,2
 "Al Kamlin, Sudan",33.2458,15.0984,"(33.2458, 15.0984)",0,"Monday, January 20, 2025",0,0,2
 "Mokina, South Sudan",33.3212,4.1537,"(33.3212, 4.1537)",0,"Monday, January 20, 2025",0,0,2
 "Abu Hamad, Sudan",33.3816,19.5028,"(33.3816, 19.5028)",0,"Monday, January 20, 2025",0,0,2
 "Mwambilija, Tanzania",34.1199,-2.9369,"(34.1199, -2.9369)",0,"Monday, January 20, 2025",0,0,2
-Unknown,34.3126,9.0012,"(34.3126, 9.0012)",0,"Monday, January 20, 2025",0,0,2
+Unknown,34.2581,9.0491,"(34.2581, 9.0491)",0,"Monday, January 20, 2025",0,0,2
 Unknown,34.391,5.2971,"(34.391, 5.2971)",0,"Monday, January 20, 2025",0,0,2
-"Bungoma, Kenya",34.5177,0.5336,"(34.5177, 0.5336)",0,"Monday, January 20, 2025",0,0,2
-"Gucha, Kenya",34.804,-0.8004,"(34.804, -0.8004)",0,"Monday, January 20, 2025",0,0,2
-"Chella Dafino, Ethiopia",35.3826,9.0384,"(35.3826, 9.0384)",0,"Monday, January 20, 2025",0,0,2
+"Bungoma, Kenya",34.497,0.5608,"(34.497, 0.5608)",0,"Monday, January 20, 2025",0,0,2
+"Thimjope, Kenya",34.5837,-1.0331,"(34.5837, -1.0331)",0,"Monday, January 20, 2025",0,0,2
+"Magwagwa, Kenya",35.0405,-0.4567,"(35.0405, -0.4567)",0,"Monday, January 20, 2025",0,0,2
+"Chella Dafino, Ethiopia",35.3586,9.017,"(35.3586, 9.017)",0,"Monday, January 20, 2025",0,0,2
 Unknown,36.4775,15.9739,"(36.4775, 15.9739)",0,"Monday, January 20, 2025",0,0,2
 "Arusha, Tanzania",36.6313,-3.3401,"(36.6313, -3.3401)",0,"Monday, January 20, 2025",0,0,2
+"Kemo, Ethiopia",36.7013,7.3957,"(36.7013, 7.3957)",0,"Monday, January 20, 2025",0,0,2
 "Wedo, Ethiopia",36.794,8.8993,"(36.794, 8.8993)",0,"Monday, January 20, 2025",0,0,2
-"Mehusa, Ethiopia",36.8062,7.371,"(36.8062, 7.371)",0,"Monday, January 20, 2025",0,0,2
-"Adis Kidane, Ethiopia",36.8365,11.0709,"(36.8365, 11.0709)",0,"Monday, January 20, 2025",0,0,2
 "Gebeit, Sudan",36.9622,18.9942,"(36.9622, 18.9942)",0,"Monday, January 20, 2025",0,0,2
-"Malanaha, Ethiopia",37.0825,6.3996,"(37.0825, 6.3996)",0,"Monday, January 20, 2025",0,0,2
-"Doba, Ethiopia",37.6895,7.9682,"(37.6895, 7.9682)",0,"Monday, January 20, 2025",0,0,2
-"Tsige Tsiyon, Ethiopia",37.7062,10.9764,"(37.7062, 10.9764)",0,"Monday, January 20, 2025",0,0,2
-"Nayhoye, Ethiopia",37.7275,12.7741,"(37.7275, 12.7741)",0,"Monday, January 20, 2025",0,0,2
+"Dogo, Ethiopia",37.1049,6.4664,"(37.1049, 6.4664)",0,"Monday, January 20, 2025",0,0,2
+"Gish Abay, Ethiopia",37.2256,11.0287,"(37.2256, 11.0287)",0,"Monday, January 20, 2025",0,0,2
+"Gondar, Ethiopia",37.518,12.5988,"(37.518, 12.5988)",0,"Monday, January 20, 2025",0,0,2
+"Doba, Ethiopia",37.6631,7.9301,"(37.6631, 7.9301)",0,"Monday, January 20, 2025",0,0,2
 Unknown,38.0785,17.787,"(38.0785, 17.787)",0,"Monday, January 20, 2025",0,0,2
-"Albuna, Ethiopia",38.6958,9.3432,"(38.6958, 9.3432)",0,"Monday, January 20, 2025",0,0,2
+"Adisge, Ethiopia",38.3158,13.0367,"(38.3158, 13.0367)",0,"Monday, January 20, 2025",0,0,2
+"Mut'e, Ethiopia",38.6156,9.3054,"(38.6156, 9.3054)",0,"Monday, January 20, 2025",0,0,2
 "Horancia, Ethiopia",38.7626,6.5213,"(38.7626, 6.5213)",0,"Monday, January 20, 2025",0,0,2
-"Bit'oy, Ethiopia",39.1016,11.8619,"(39.1016, 11.8619)",0,"Monday, January 20, 2025",0,0,2
-"Adama, Ethiopia",39.5303,10.7322,"(39.5303, 10.7322)",0,"Monday, January 20, 2025",0,0,2
+"Askera, Ethiopia",39.1273,11.7176,"(39.1273, 11.7176)",0,"Monday, January 20, 2025",0,0,2
+"Darat, Ethiopia",39.605,10.5003,"(39.605, 10.5003)",0,"Monday, January 20, 2025",0,0,2
 "Moye, Ethiopia",39.9535,8.23,"(39.9535, 8.23)",0,"Monday, January 20, 2025",0,0,2
 "Mesala, Ethiopia",41.2145,9.1215,"(41.2145, 9.1215)",0,"Monday, January 20, 2025",0,0,2
