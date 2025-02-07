@@ -41,6 +41,6 @@ Here, I download, analyze and visualize the data to create this map, which updat
 1. I create an HTML website file ("index.html") by modifying the index.html file from jsoma's bad-air-cities tutorial: https://github.com/jsoma/bad-air-cities/blob/main/index.html
 2. I insert the responsive iFrame embed code from my Datawrapper map.
 3. I modify the CSS to extend the map across the screen and tailor the page design.
-4. I publish the index.html file using Github Pages.
+4. I publish the index.html file using Github Pages: https://annikamcginnis.github.io/nile-basin-flood-hotspots-daily/
 
 **_This repo also includes a JSON file with the boundaries of the geographic regions included in the flood geodatabase, and a Python Jupyter Notebook where I explain how I downloaded and simplified this file using Python and QGIS. You can find my full process in "DATA_DIARY.ipynb"._**
